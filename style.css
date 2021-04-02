@@ -1,0 +1,175 @@
+body {
+  background-color: #b6c39d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: #222816;
+  font-weight: bold;
+}
+
+p {
+  color: #505c38;
+}
+
+button {
+  color: #222816;
+  background-color: #889c60;
+  border: 1px solid #000;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: #889c60;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+#header img {
+  max-width: 125px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-right: 50px;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+#main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: #b6c39d;
+}
+
+#description-div {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  text-align: justify;
+  max-width: 800px;
+}
+
+#video-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#articles-div {
+  margin: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  height: 10%;
+  width: 30%;
+  text-align: center;
+  border: solid 1px grey;
+  padding: 30px 10px;
+}
+
+.article button {
+  padding: 10px 25px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+#form input {
+  padding: 15px 20px;
+}
+
+#form #submit {
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+#footer {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  background-color: #b6c39d;
+}
+
+#footer p {
+  margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+  #header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  #header img {
+    width: 100%;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #nav-bar li a {
+    padding: 0px 5px;
+    margin-top: 50px;
+  }
+
+  #video-div iframe {
+    width: 100%;
+  }
+
+  #articles-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .article {
+    height: 10%;
+    width: 90%;
+    text-align: center;
+    border: solid 1px grey;
+  }
+
+  .article button {
+    padding: 10px 25px;
+  }
+
+  #footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
